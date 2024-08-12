@@ -81,7 +81,7 @@ body {
 }
 .banner-text p {
   color: rgba(255, 255, 255, 0.5);
-  min-width: 32.5rem;
+  max-width: 32.5rem;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -216,6 +216,41 @@ body {
   text-align: center;
 }
 
+/* Run section */
+.run {
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+}
+.run-container {
+  width: 90%;
+  margin: 1.8rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.run-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.run-des {
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 27rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 34px;
+}
+.run-img img {
+  width: 340px;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
 /* Responsive */
 @media screen and (max-width: 576px) {
   .navbar-items {
@@ -232,10 +267,11 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 0;
   }
-  .banner-text h2,
-  .banner-text p {
-    max-width: 80%;
+  .btn-2 {
+    font-size: 1rem;
+    padding: 16px 20px;
   }
   #badge1 {
     left: 198.2px;
@@ -251,5 +287,8 @@ body {
   .habit-item-content {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+  }
+  .run-container {
+    flex-direction: column;
   }
 }
