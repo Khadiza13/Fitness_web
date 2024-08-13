@@ -400,4 +400,27 @@ select {
   .run-container {
     flex-direction: column;
   }
+  .bmi-1 {
+    margin-left: 20px;
+    /* max-width: 22rem; */
+  }
+  .bmi2-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    gap: 40px;
+  }
+  .bmi-form {
+    max-width: 22rem;
+  }
+  .bmi-form p {
+    max-width: 20rem;
+  }
+  .bmi-form form input[type="number"],
+  select {
+    width: 100%;
+  }
 }
