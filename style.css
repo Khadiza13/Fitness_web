@@ -13,6 +13,9 @@ body {
 .bg-primary {
   color: rgb(230, 83, 60);
 }
+.text {
+  text-align: left;
+}
 /* navbar */
 .header {
   width: 80%;
@@ -171,10 +174,33 @@ body {
   font-weight: 400;
   text-align: left;
 }
+/* Why */
+.why-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.why-content i {
+  color: rgb(230, 83, 60);
+  height: 40px;
+  width: 40px;
+}
+.why1,
+.why2,
+.why3,
+.why4 {
+  width: 15rem;
+  height: 13rem;
+  border: 1px solid rgba(228, 55, 55, 0.652);
+  background-color: rgb(34, 34, 34);
+  border-radius: 15px;
+  padding: 30px 20px 20px 20px;
+}
 
 /* Habit section */
 .habit,
-.team {
+.team,
+.why {
   width: 80%;
   margin: 2rem auto;
 }
@@ -483,6 +509,10 @@ hr {
   .ellipse i {
     display: block;
   }
+  .why-content {
+    flex-direction: column;
+    gap: 10px;
+  }
   .habit-item-content {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -492,7 +522,6 @@ hr {
   }
   .bmi-1 {
     margin-left: 20px;
-    /* max-width: 22rem; */
   }
   .bmi2-container {
     flex-direction: column;
